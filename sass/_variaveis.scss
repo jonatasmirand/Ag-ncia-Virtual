@@ -5,4 +5,5 @@ $backgraund-secundario: rgba(199, 174, 220,0.7);;
 $fonte-principal: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 $align-padrao: center;
 $espacamento-padrao: 300px;
-$espacamento-metate: calc($espacamento-padrao/ 6);
+$espacamento-menor: calc($espacamento-padrao/ 6);
+$fonte-tamanho: 1rem;

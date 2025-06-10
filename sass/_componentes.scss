@@ -9,7 +9,7 @@
     height: 8vh;
 
     &__logo {
-        font-size: 1.3rem;
+        font-size: variaveis.$fonte-tamanho;
         text-transform: capitalize;
         letter-spacing: 4px;
         color: variaveis.$cor-secundaria;
@@ -38,7 +38,6 @@
     }
 }
 
-
 .section__logotipo {
     @include mixins.espacamento-padrao;
     height: auto;
@@ -54,7 +53,7 @@
     padding: 2rem;
 
     &-text {
-        margin-bottom: variaveis.$espacamento-metate;
+        margin-bottom: variaveis.$espacamento-menor;
         justify-content: center;
         @include mixins.align-padrao;
         text-align: center;
@@ -88,7 +87,7 @@
     &-text {
         text-align: justify;
         margin: 3rem;
-        font-size: 1rem;
+        font-size: variaveis.$fonte-tamanho;
         opacity: 0.5;
     }
 }
@@ -106,7 +105,7 @@
     width: 90%;
 
     &-title {
-        margin-bottom: variaveis.$espacamento-metate;
+        margin-bottom: variaveis.$espacamento-menor;
         justify-content: center;
         @include mixins.align-padrao;
         text-align: center;
@@ -116,7 +115,7 @@
     &-text {
         text-align: justify;
         margin: 3rem;
-        font-size: 1rem;
+        font-size: variaveis.$fonte-tamanho;
         opacity: 0.5;
     }
 }
@@ -127,7 +126,7 @@
     @include mixins.align-padrao;
 
     &__title {
-        margin-bottom: variaveis.$espacamento-metate;
+        margin-bottom: variaveis.$espacamento-menor;
         justify-content: center;
         @include mixins.align-padrao;
         text-align: center;
@@ -149,7 +148,7 @@
     width: 90%;
 
     &-title {
-        margin-bottom: variaveis.$espacamento-metate;
+        margin-bottom: variaveis.$espacamento-menor;
         justify-content: center;
         @include mixins.align-padrao;
         text-align: center;
@@ -159,7 +158,7 @@
     &-text {
         text-align: justify;
         margin: 3rem;
-        font-size: 1rem;
+        font-size: variaveis.$fonte-tamanho;
         opacity: 0.5;
     }
 }
@@ -171,7 +170,7 @@
     @include mixins.align-padrao;
 
     &__title {
-        margin-bottom: variaveis.$espacamento-metate;
+        margin-bottom: variaveis.$espacamento-menor;
         justify-content: center;
         @include mixins.align-padrao;
         text-align: center;
@@ -202,7 +201,7 @@
     @include mixins.align-padrao;
 
     &__title {
-        margin-bottom: variaveis.$espacamento-metate;
+        margin-bottom: variaveis.$espacamento-menor;
         justify-content: center;
         @include mixins.align-padrao;
         text-align: center;
