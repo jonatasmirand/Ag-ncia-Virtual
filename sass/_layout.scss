@@ -1,0 +1,90 @@
+@use 'variaveis';
+
+main {
+    background: url("img/walpaper.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+.mobile {
+    display: none;
+}
+
+@media(max-width: 600px) {
+    .nav {
+        flex-direction: column;
+        align-items: variaveis.$align-padrao;
+        height: auto;
+        padding: 1rem 0;
+
+        &__link {
+            flex-direction: column;
+            width: 100%;
+            align-items: variaveis.$align-padrao;
+            font-size: 0.8rem
+        }
+
+        &__item {
+            margin: 0.5rem 0;
+            padding-left: 0.9rem;
+        }
+    }
+
+    .mobile {
+        display: block;
+        background-color: variaveis.$backgraund-secundario;
+        color: red;
+        padding: 5px;
+        align-items: variaveis.$align-padrao;
+        justify-content: center;
+    }
+
+    .section__logotipo {
+        max-width: 200px;
+    }
+
+    .section__home-subtitle {
+        width: 70%;
+    }
+
+    .sobreNos__container,
+    .service__container,
+    .depoimentos__container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media(min-width: 601px) and (max-width: 900px) {
+
+    .nav {
+        flex-direction: column;
+        align-items: variaveis.$align-padrao;
+        height: auto;
+        padding: 1rem 0;
+
+        &__link {
+            flex-direction: column;
+            width: 100%;
+            align-items: variaveis.$align-padrao;
+            font-size: 0.8rem;
+        }
+
+        &__item {
+            margin: 0.5rem 0;
+            padding-left: 5vw;
+        }
+    }
+
+    .section__home-subtitle {
+        width: 80%;
+    }
+
+    .section__logotipo {
+        max-width: 200px;
+    }
+
+    .sobreNos__container,
+    .service__container,
+    .depoimentos__container {
+        grid-template-columns: 1fr;
+    }
+}

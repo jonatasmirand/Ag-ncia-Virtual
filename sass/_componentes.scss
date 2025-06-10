@@ -1,0 +1,239 @@
+@use 'variaveis';
+@use 'mixins';
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    @include mixins.align-padrao;
+    background-color: variaveis.$backgraund-primario;
+    height: 8vh;
+
+    &__logo {
+        font-size: 1.3rem;
+        text-transform: capitalize;
+        letter-spacing: 4px;
+        color: variaveis.$cor-secundaria;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+
+    &__link {
+        color: variaveis.$cor-secundaria;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+
+    &:hover {
+        opacity: 0.7;
+    }
+
+    &__list {
+        list-style: none;
+        display: flex;
+    }
+
+    &__item {
+        letter-spacing: 3px;
+        margin-left: 2rem;
+    }
+}
+
+
+.section__logotipo {
+    @include mixins.espacamento-padrao;
+    height: auto;
+    border-radius: 50%;
+    transition: width 0.3s ease;
+}
+
+.section__home {
+    display: flex;
+    flex-direction: column;
+    @include mixins.align-padrao;
+    justify-content: center;
+    padding: 2rem;
+
+    &-text {
+        margin-bottom: variaveis.$espacamento-metate;
+        justify-content: center;
+        @include mixins.align-padrao;
+        text-align: center;
+        color: variaveis.$cor-primaria;
+    }
+
+    &-subtitle {
+        padding: 20px;
+        margin: 15px;
+        width: 30vw;
+        text-align: center;
+        opacity: 0.5;
+    }
+}
+
+.section__transformar {
+    background-color: variaveis.$backgraund-primario;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    justify-content: space-between;
+
+    &-title {
+        justify-content: center;
+        @include mixins.align-padrao;
+        text-align: center;
+        color: variaveis.$cor-primaria;
+    }
+
+    &-text {
+        text-align: justify;
+        margin: 3rem;
+        font-size: 1rem;
+        opacity: 0.5;
+    }
+}
+
+.sobreNos__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    justify-items: center;
+}
+
+.sobreNos__cards {
+    background-color: variaveis.$backgraund-secundario;
+    border-radius: 8px;
+    width: 90%;
+
+    &-title {
+        margin-bottom: variaveis.$espacamento-metate;
+        justify-content: center;
+        @include mixins.align-padrao;
+        text-align: center;
+        color: variaveis.$cor-primaria;
+    }
+
+    &-text {
+        text-align: justify;
+        margin: 3rem;
+        font-size: 1rem;
+        opacity: 0.5;
+    }
+}
+
+.service {
+    display: flex;
+    flex-direction: column;
+    @include mixins.align-padrao;
+
+    &__title {
+        margin-bottom: variaveis.$espacamento-metate;
+        justify-content: center;
+        @include mixins.align-padrao;
+        text-align: center;
+        color: variaveis.$cor-primaria;
+        padding-top: 2rem;
+    }
+
+    &__container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
+        justify-items: center;
+    }
+}
+
+.service__card {
+    background-color: variaveis.$backgraund-secundario;
+    border-radius: 8px;
+    width: 90%;
+
+    &-title {
+        margin-bottom: variaveis.$espacamento-metate;
+        justify-content: center;
+        @include mixins.align-padrao;
+        text-align: center;
+        color: variaveis.$cor-primaria;
+    }
+
+    &-text {
+        text-align: justify;
+        margin: 3rem;
+        font-size: 1rem;
+        opacity: 0.5;
+    }
+}
+
+
+.depoimentos {
+    display: flex;
+    flex-direction: column;
+    @include mixins.align-padrao;
+
+    &__title {
+        margin-bottom: variaveis.$espacamento-metate;
+        justify-content: center;
+        @include mixins.align-padrao;
+        text-align: center;
+        color: variaveis.$cor-primaria;
+        padding-top: 2rem;
+    }
+
+    &__container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
+        justify-items: center;
+    }
+
+    &__card {
+        background-color: variaveis.$backgraund-secundario;
+        padding: 2rem;
+        border-radius: 8px;
+        width: 90%;
+        text-align: center;
+        opacity: 0.8;
+    }
+}
+
+.contato {
+    display: flex;
+    flex-direction: column;
+    @include mixins.align-padrao;
+
+    &__title {
+        margin-bottom: variaveis.$espacamento-metate;
+        justify-content: center;
+        @include mixins.align-padrao;
+        text-align: center;
+        color: variaveis.$cor-primaria;
+        padding-top: 2rem;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        @include mixins.espacamento-padrao;
+    }
+
+    &__form-input,
+    &__form-textarea {
+        padding: 0.5rem;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    &__form-button {
+        padding: 0.5rem;
+        border: none;
+        background-color: variaveis.$cor-primaria;
+        color: white;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    &__form-button:hover {
+        opacity: 0.8;
+    }
+}

@@ -1,0 +1,9 @@
+@use 'variaveis';
+
+@mixin espacamento-padrao{
+    width: variaveis.$espacamento-padrao;
+}
+
+@mixin align-padrao{
+    align-items: variaveis.$align-padrao;
+}
